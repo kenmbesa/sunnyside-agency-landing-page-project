@@ -1,0 +1,223 @@
+@media screen {
+  header {
+    background-image: url("/images/mobile/image-header.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+
+    h1 {
+      color: #fff;
+      text-align: center;
+      font-size: 4em;
+      margin-top: -0.3em;
+    }
+  }
+  article {
+    color: $main-p-color;
+
+    img {
+      width: 100%;
+    }
+
+    main {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+
+      section {
+        margin: 1em 0;
+
+        h2,
+        p {
+          padding: 0 2em;
+        }
+
+        p {
+          line-height: 1.5em;
+          font-size: 1.2em;
+        }
+      }
+
+      .main-grid {
+        h2 {
+          font-size: 2em;
+        }
+
+        div {
+          margin-bottom: 2.5em;
+
+          button {
+            border: none;
+            padding: 1em 2em;
+            border-radius: 7px;
+            margin-top: 1em;
+            color: #fff;
+          }
+        }
+
+        .card1 {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+          img {
+            order: 3;
+            margin-top: -1em;
+          }
+
+          p,
+          h2 {
+            order: 2;
+          }
+
+          button {
+            order: 1;
+            background: rgb(243, 218, 106);
+            width: 40%;
+          }
+
+          button:hover {
+            background: rgb(245, 227, 147);
+            color: black;
+          }
+        }
+
+        .card2 {
+          button {
+            background: rgb(243, 106, 106);
+          }
+
+          button:hover {
+            background: rgb(241, 145, 145);
+            color: black;
+          }
+        }
+
+        .image-backgrounds {
+          .image-bg {
+            background-repeat: no-repeat;
+            background-position-x: center;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+          }
+
+          .graphic-design {
+            background-image: url("/images/mobile/image-graphic-design.jpg");
+          }
+
+          .photography {
+            background-image: url("/images/mobile/image-photography.jpg");
+            margin-top: -2.5em;
+          }
+
+          .text-block {
+            margin-top: 25em;
+
+            h2,
+            p {
+              color: black;
+            }
+          }
+        }
+      }
+
+      .client-testimonials {
+        h2 {
+          color: grey;
+          margin-top: -1em;
+        }
+
+        .testimonial {
+          margin-bottom: 3em;
+
+          img {
+            width: 25%;
+            border-radius: 50%;
+          }
+
+          p {
+            color: $main-p-color;
+            font-size: 1.2em;
+          }
+
+          h3 {
+            color: $grey-color;
+          }
+
+          span {
+            color: grey;
+          }
+        }
+      }
+
+      .image-gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    footer {
+      background: hsl(168, 52%, 56%);
+      margin-top: -1em;
+      padding: 2em 1em;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      img {
+        color: green;
+        width: 50%;
+        margin-bottom: 1em;
+      }
+
+      nav {
+        ul {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 3em;
+          margin-left: -2em;
+
+          li {
+            list-style: none;
+            margin: 0.5em;
+
+            a {
+              color: hsl(167, 40%, 24%);
+              text-decoration: none;
+              font-weight: 600;
+            }
+          }
+        }
+      }
+
+      .social-media {
+        // width: 80%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        img {
+          margin-right: 0.5em;
+        }
+      }
+    }
+
+    .credits {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2em 0;
+      background: $grey-color;
+      color: #fff;
+
+      a {
+        color: hsl(168, 52%, 56%);
+      }
+    }
+  }
+}
